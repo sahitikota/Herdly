@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Herdly</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="leaf.png">
+</head>
+
+<body>
+    <section>
+    <div id="page-hero">
+      <div id="header">
+        <header>
+          <div id="header-left-side">
+            <img src="logo.png" height=90 width=90 style float:left padding-left:20px;> 
+          </div>
+          <div id="header-right-side">
+            <nav class="stroke" style float:right padding-top:40px;>
+              <a id="nav-button"  href="regulations.html">Regulations</button>
+              <a id="nav-button" onclick="scroll();" href="#">Find products</a>
+              <a id="nav-button" href="#">About us</a>
+              
+              <!--<input type="text" placeholder="Search for a brand..."-->
+            </nav>
+          </div>
+    
+        </header>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <!--
+      <h1 id="title">Herdly</h1>
+      <h5 id="slogan">The platform where animals are heard.</h5>
+      -->
+      <img src="arrow.gif" id="arrow-gif" width=200px height=150px>
+      <br>
+      <img src="cow.gif" id="cow-gif" width=200px height=150px>
+      <br><br><br><br><br><br><br><br><br><br><br>
+      <!--<img src="arrow.gif" width=150px height=150px> -->
+      </div>
+    </section>
+    <section>
+      <div class="container reveal">
+        <div class="parent-info">
+          <div class="info">
+            <div id="what-we-do">
+              <h2 id="what-we-do-title" class="fade-in">What do we do?</h2>
+              <p id="what-we-do-paragraph">Here at Herdly, our aim is to help customers in making informed and ethical decisions that maintain the sustainable standards of vegan and cruelty free products. We provide accurate data on hundreds of thousands of brands in the poultry, makeup, and hygiene industries to properly educate consumers.</p>
+            </div>
+          </div>
+          <div class="info-imgs">
+            <img class="infoball1" id="info-ball1" height=200px width=200px>
+            <img class="infoball2" id="info-ball2" height=250px width=250px>
+            <img class="infoball3" id="info-ball3" height=200px width=200px>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section>
+      <div class = "container reveal">
+        <div class="parent">
+        
+          <div id="images">
+            <a href = "https://user.tjhsst.edu/2023tsakamur/meat" id="meat"><img src="meat.png" width=230 height=230 class="meat-img"></a>
+            <a href = "https://user.tjhsst.edu/2023hramaswa/hygiene" id="hygiene"><img src="soap.png" width=210 height=260 class="hygiene-img"></a>
+            <a href = "https://user.tjhsst.edu/2023hramaswa/makeup" id="makeup"><img src="makeup.png" width=230 height=260 class="makeup-img"></a>
+          </div> 
+        
+          <div id="find-products">
+            <h2 id="products-title">Find products</h2>
+            <p id="products-paragraph">Want to know what products best meet your standards? Interested in shopping sustainably? Click on the icons to the right to learn which products are cruelty-free, vegan, and more. Our top algorithms analyze hundred of products based on your preferences and make sure you make informed decisions!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <div class="container reveal">
+        <div class="parent-regulations"> 
+          <div id="regulations-div">
+            <h2 id="regulations-title">Regulations</h2>
+            
+            <p id="regulations-paragraph">Click here to read more about the regulations surrounding your most used products including personal hygiene products, cosmetics, and meat. Ensure that you are up-to-date and knowledgeable about the ethics of the products you use, without the confusing legal jargon!</p>
+            <a href="regulations.html" class="regulations-button">Read more about regulations</a>
+          </div>
+          <div id="regulations-img">
+            <img src="pass stamp.png" width=450px height=300px id="passstamp" class="passstamp-class">
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container reveal">
+        <div id="team">
+          <h2 id="team-title">Meet the Team</h2>
+          
+          <h3 id="team-slogan">Four high school students trying to make a change.</h3><br>
+        </div>
+      <div id="team-members">
+        <div class="person">
+          <h3>Johanna Lohmus</h3>
+          <img src="johanna.png">
+          <h6>UI/UX Designer</h6>
+          <h6>Web Developer</h6>
+        </div>
+        <div class="person">
+          <h3>Sahiti Kota</h3>
+          <img src="sahiti.png">
+          <h6>Backend Developer</h6>
+          <h6>Graphic Designer</h6>
+        </div>
+        <div class="person">
+          <h3>Harini Ramaswamy</h3>
+          <img src="harini.png">
+          <h6>UI/UX Designer</h6>
+          <h6>Web Developer</h6>
+        </div>
+        <div class="person">
+          <h3>Thrisha Sakamuri</h3>
+          <img src="thrisha.png">
+          <h6>Backend Designer</h6>
+          <h6>Developer</h6>
+        </div>
+      </div>
+      </div>
+      <br>
+</section>
+
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+    function reveal()
+    {
+      var reveals = document.querySelectorAll('.reveal');
+      for(var i = 0; i < reveals.length; i++)
+      {
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+        if (revealtop < windowheight - revealpoint)
+        {
+          reveals[i].classList.add('active');
+        }
+        else
+        {
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+  function scroll()
+    {
+      scrollTo(0,200);
+    }
+  
+  </script>
+  
+</body>
+
+</html>
