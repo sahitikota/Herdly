@@ -6,7 +6,7 @@
 
 #page-hero {
   line-height: 10px;
-  background-image: url("bgbgbg.jpg");
+  background-image: url("f.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -241,12 +241,12 @@ h6 {
   position: relative;
   border: 3px solid #73BB7D;
   border-radius: 30px;
+  transition:ease-out 0.3s;
 }
 
 .regulations-button:hover {
-  background-color: #73BB7D;
-  
-  color: white;
+  box-shadow:inset 400px 0 0 0 #73BB7D;
+  color:white;
 }
 
 nav {
@@ -255,26 +255,14 @@ nav {
   padding-top: 20px;
 }
 
-nav a{
+
+.nav-button {
   float: right;
-  color: white;
   text-align: center;
   padding: 10px 10px;
   text-decoration: none;
   font-size: 20px;
   padding-right: 30px;
-}
-
-nav input{
-  float: right;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.nav-button {
   color: white;
   padding: 20px;
 }
